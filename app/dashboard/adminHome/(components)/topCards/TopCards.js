@@ -36,6 +36,7 @@ export default function TopCards() {
       {cardData.map((item) => {
         return (
           <Card
+            key={i}
             cardCss={item.cardCss}
             title={item.title}
             percent={item.percent}
