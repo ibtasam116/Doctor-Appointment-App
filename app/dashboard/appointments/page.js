@@ -26,7 +26,9 @@ const page = async () => {
       <Header />
       <SideBar />
       <div className="p-5 md:ml-[279px]">
-        <h1 className="text-3xl text-[#122E99] font-bold mb-15">Patients List</h1>
+        <h1 className="text-3xl text-[#122E99] font-bold mb-15">
+          Appointments List
+        </h1>
         <div className="flex flex-row justify-between">
           <h2 className="text-xl font-semibold mb-4 text-center text-white"></h2>
           <button
@@ -47,43 +49,38 @@ const page = async () => {
             </tr>
           </thead>
           <tbody className="text-gray-700">
-           {
-            data.map((item, i)=>{
-              return(
+            {data.map((item, i) => {
+              return (
                 <>
-                
-                
-            <tr className="bg-gray-100 mt-3 text-[#292D32] text-center border-b border-[#122E99]">
-              <td className="px-4 py-2">{i + 1}</td>
-              <td className="px-4 py-2">{item.name}</td>
-              <td className="px-4 py-2">{item.contactDetail}</td>
-              <td className="px-4 py-2">{item.medicalHostory}</td>
-              <td className="px-4 py-2">
-                <button
-                  className="text-blue-500 hover:text-blue-700 mr-5"
-                  // onClick={() => openModaledit(item)}
-                >
-                  <FaEdit />
-                </button>
-                <button
-                  className="text-red-500 hover:text-red-700"
-                  // onClick={() => handleDelete(item.id)}
-                >
-                  <FaTrash />
-                </button>
-              </td>
-            </tr>
-            </>
-              )
-            })
-           }
+                  <tr
+                    key={i}
+                    className="bg-gray-100 mt-3 text-[#292D32] text-center border-b border-[#122E99]"
+                  >
+                    <td className="px-4 py-2">{i + 1}</td>
+                    <td className="px-4 py-2">{item.name}</td>
+                    <td className="px-4 py-2">{item.contactDetail}</td>
+                    <td className="px-4 py-2">{item.medicalHostory}</td>
+                    <td className="px-4 py-2">
+                      <button
+                        className="text-blue-500 hover:text-blue-700 mr-5"
+                        // onClick={() => openModaledit(item)}
+                      >
+                        <FaEdit />
+                      </button>
+                      <button
+                        className="text-red-500 hover:text-red-700"
+                        // onClick={() => handleDelete(item.id)}
+                      >
+                        <FaTrash />
+                      </button>
+                    </td>
+                  </tr>
+                </>
+              );
+            })}
           </tbody>
         </table>
       </div>
-
-
-
-      
     </>
   );
 };

@@ -105,7 +105,7 @@ const SideBar = () => {
             </li>
             <li>
               <Link
-                href="/"
+                href="/dashboard/appointments"
                 className={`w-[272px] h-[62px] flex items-center py-4 px-10 relative`}
               >
                 <div
@@ -115,7 +115,7 @@ const SideBar = () => {
                 <span className="ml-5 text-[18.971px]">Appointments</span>
               </Link>
             </li>
-            <li>
+            {/* <li>
               <Link
                 href="/"
                 className={`w-[272px] h-[62px] flex items-center py-4 px-10 relative`}
@@ -126,9 +126,9 @@ const SideBar = () => {
                 <Image src={svg6} className="w-[29px] h-[29px]" alt="icon1" />
                 <span className="ml-5 text-[18.971px]">Schedule</span>
               </Link>
-            </li>
+            </li> */}
             <div className="border border-dashed border-_borderGray"></div>
-            <li>
+            {/* <li>
               <Link
                 href="/"
                 className={`w-[272px] h-[62px] flex items-center py-4 px-10 relative`}
@@ -151,7 +151,7 @@ const SideBar = () => {
                 <Image src={svg8} className="w-[29px] h-[29px]" alt="icon1" />
                 <span className="ml-5 text-[18.971px]">Setting</span>
               </Link>
-            </li>
+            </li> */}
           </ul>
         </div>
       </aside>

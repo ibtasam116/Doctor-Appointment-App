@@ -21,7 +21,7 @@ const page = async () => {
   return (
     <>
       <div>Doctor</div>
-      {data.map((item) => {
+      {/* {data.map((item) => {
         return (
           <>
             <th>{item.name}</th>
@@ -29,7 +29,7 @@ const page = async () => {
             <th>{item.contactInfo}</th>
           </>
         );
-      })}
+      })} */}
     </>
   );
 };

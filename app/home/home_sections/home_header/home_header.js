@@ -7,9 +7,9 @@ import Link from "next/link";
 export default function Home_header() {
   return (
     <>
-      <section className="pb-9 md:py-32 bg-[#122E99] text-white">
+      <section className="pb-9 md:pt-20 bg-white">
         <div className="container mx-auto px-[5%] md:px-[10%]">
-          <div className="grid lg:grid-cols-2 gap-10">
+          <div className="grid md:grid-cols-2">
             <div className="md:hidden">
               <div className="flex justify-center transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-700">
                 <Image
@@ -23,7 +23,7 @@ export default function Home_header() {
 
             <div className="w-full sm:w-[75%] lg:w-full mx-auto flex flex-col justify-center ">
               <div>
-                <h1 className="text-4xl sm:text-[50px] font-bold sm:leading-[60px] animate-pulse">
+                <h1 className="text-4xl sm:text-[50px] font-bold sm:leading-[60px] text-[#122E99]">
                   Your New Smile <br /> Starts From Here
                 </h1>
               </div>

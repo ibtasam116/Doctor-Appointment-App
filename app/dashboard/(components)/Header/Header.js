@@ -4,6 +4,7 @@ import csmall from "../../assets/svg/headerSvg/csmall.svg";
 import searchIcon from "../../assets/svg/headerSvg/icons_search.svg";
 import notification from "../../assets/svg/headerSvg/mi_notification.svg";
 import Image from "next/image";
+import Link from "next/link";
 
 const Header = () => {
   return (
@@ -39,6 +40,11 @@ const Header = () => {
               alt="miNotification"
             />
           </div>
+          <div className="md:ml-1 md:mr-3 cursor-pointer font-bold text-[#122E99]">
+            <Link href='/'>
+            Logout
+            </Link>
+            </div>
         </div>
       </div>
     </div>

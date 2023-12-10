@@ -47,43 +47,35 @@ const page = async () => {
             </tr>
           </thead>
           <tbody className="text-gray-700">
-           {
-            data.map((item, i)=>{
-              return(
+            {data.map((item, i) => {
+              return (
                 <>
-                
-                
-            <tr className="bg-gray-100 mt-3 text-[#292D32] text-center border-b border-[#122E99]">
-              <td className="px-4 py-2">{i + 1}</td>
-              <td className="px-4 py-2">{item.name}</td>
-              <td className="px-4 py-2">{item.specialization}</td>
-              <td className="px-4 py-2">{item.contactInfo}</td>
-              <td className="px-4 py-2">
-                <button
-                  className="text-blue-500 hover:text-blue-700 mr-5"
-                  // onClick={() => openModaledit(item)}
-                >
-                  <FaEdit />
-                </button>
-                <button
-                  className="text-red-500 hover:text-red-700"
-                  // onClick={() => handleDelete(item.id)}
-                >
-                  <FaTrash />
-                </button>
-              </td>
-            </tr>
-            </>
-              )
-            })
-           }
+                  <tr key={i} className="bg-gray-100 mt-3 text-[#292D32] text-center border-b border-[#122E99]">
+                    <td className="px-4 py-2">{i + 1}</td>
+                    <td className="px-4 py-2">{item.name}</td>
+                    <td className="px-4 py-2">{item.specialization}</td>
+                    <td className="px-4 py-2">{item.contactInfo}</td>
+                    <td className="px-4 py-2">
+                      <button
+                        className="text-blue-500 hover:text-blue-700 mr-5"
+                        // onClick={() => openModaledit(item)}
+                      >
+                        <FaEdit />
+                      </button>
+                      <button
+                        className="text-red-500 hover:text-red-700"
+                        // onClick={() => handleDelete(item.id)}
+                      >
+                        <FaTrash />
+                      </button>
+                    </td>
+                  </tr>
+                </>
+              );
+            })}
           </tbody>
         </table>
       </div>
-
-
-
-      
     </>
   );
 };
